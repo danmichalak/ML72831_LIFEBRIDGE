@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8" ng-app="xmp.app"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9" ng-app="xmp.app"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" ng-app="xmp.app">
+<!--<![endif]-->
+
+<head>
+    <title>Metlife</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Icon -->
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="https://getmetbenefits.com/assets/plugins/font-awesome/css/font-awesome.min.css">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="https://getmetbenefits.com/assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="css/global.css">
+
+    <!-- XMPie CSS library -->
+    <link href="deps/xmp/css/xmp.css" rel="stylesheet" media="screen">
+
+    <!-- XMPie XMPL library -->
+    <script src="deps/jquery/jquery-1.10.2.min.js"></script>
+    <script src="deps/xmp/js/xmp.min.js"></script>
+    <script src="xmpcfg.js"></script>
+</head>
+
+<body ng-controller="GlobalController">
+<div ng-controller="XMPAnonymousPage" xmp-cloak>
+
+    <div class="global-header" ng-include="'templates/global/header.html'"></div>
+    <div class="subnav hidden-xs" ng-include="'templates/marketing/navbar_desktop.html'"></div>
+    <div class="subnav-min hidden-sm hidden-md hidden-lg" ng-include="'templates/marketing/navbar_mobile.html'"></div>
+
+    <div>
+        <div class="container page-title product-title">
+            <h1><strong><span class="variable-value">{{product_vars.lp_vars.name}}</span></strong></h1>
+        </div>
+    </div>
+
+    <div class="container product-card-tile">
+        <div class="product-card">
+            <div id="product-image-legal" class="product-card-image"></div>
+            <div class="product-card-copy">
+                <p><strong>Take advantage of MetLife {{product_vars.lp_vars.name}}&mdash; a valuable benefit for you and your family.</strong></p>
+                <p>Like many people, you may find yourself needing legal assistance sooner rather than later. You’ll want a lawyer you can trust at the right price &mdash; and an easy way to get connected. MetLife {{product_vars.lp_vars.name}} provides you with access to attorneys for estate planning, including wills, healthcare proxies and power of attorney, real estate or debt matters, and much more, with no copays, deductibles or waiting periods when you use a Network Attorney.</p>
+                <p>Whether you’re buying a home, planning for your family’s future, caring for aging parents, or dealing with the unexpected, getting legal assistance from attorneys is simple with:</p>
+                <ul>
+                    <li>A service team to match you with experienced legal help</li>
+                    <li>Quality legal advice in person or by phone</li>
+                    <li>In-court representation for covered legal matters</li>
+                    <li>A mobile app and online tools for your convenience</li>
+                    <li>No copays, deductibles, or claim forms with network attorneys</li>
+                </ul>
+                <p>Be prepared for Life's Legal issues. <a href="videos/SmartSimpleAffordable_MetLifeLegalPlans.mp4" target="_blank">Click here</a> to watch video.</p>
+                <p class="enroll-now">
+                    <a href="register.html" target="_blank" class="btn-brand-1st table" role="button" onClick="ga('send', 'event', 'Enroll Now', 'Click', 'Enroll_Now_Accident');">Get Coverage &ndash; Enroll Now</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-white">
+        <div class="container">
+
+            <div class="collapse-group">
+                <div class="collapse-btn" data-target="collapse-1">
+                    <div class="btn-copy"><span class="variable-value">{{general_vars.group}}</span> Rates</div>
+                    <div class="btn-icon"></div>
+                </div>
+                <div class="collapse" id="collapse-1">
+                    <div class="card card-block">
+                        <p>Enroll for the upcoming <span class="variable-value">Plan [pay period/month] ##/##/#### - ##/##/#### for $#.## per [pay period/month]</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse-group">
+                <div class="collapse-btn" data-target="collapse-2">
+                    <div class="btn-copy">Learn More</div>
+                    <div class="btn-icon"></div>
+                </div>
+            </div>
+
+            <!-- Separating this from associated collapse-btn for stlying -->
+            <div class="collapse-group" style="border-bottom: 0">
+                <div class="collapse" id="collapse-2">
+                    <div class="card card-block" style="padding-left: 0; padding-right: 0; margin-bottom: 0;">
+
+                        <div class="collapse-group">
+                            <div class="collapse-btn nested-item" data-target="collapse-2a">
+                                <div class="btn-copy">How does it work?</div>
+                                <div class="btn-icon"></div>
+                            </div>
+                            <div class="collapse" id="collapse-2a">
+                                <div class="card card-block">
+                                    <p>Once you're enrolled, the plan is simple to use.</p>
+                                    <p>For covered services you can simply call <span ng-include="'templates/global/phone_link.html'"></span> and say "legal" or visit <a href="http://www.info.legalplans.com" target="_blank">www.info.legalplans.com</a> to find a Network Attorney where you need one, and to obtain a case number.</p>
+                                    <p>You then call the Network Attorney you select to schedule an appointment at a time that's convenient for you.</p>
+                                    <p>It's that simple. You may also choose to use an attorney who is not in the network; in this case you will be reimbursed according to a set fee schedule.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="collapse-group">
+                            <div class="collapse-btn nested-item" data-target="collapse-2b">
+                                <div class="btn-copy">What types of services are covered?</div>
+                                <div class="btn-icon"></div>
+                            </div>
+                            <div class="collapse" id="collapse-2b">
+                                <div class="card card-block">
+                                    <ul>
+                                        <li>Estate planning documents, including wills and trusts</li>
+                                        <li>Real estate matters</li>
+                                        <li>Identity theft</li>
+                                        <li>Financial matters, such as debt-collection defense</li>
+                                        <li>Traffic offenses</li>
+                                        <li>Document review</li>
+                                        <li>Family law, including adoption and name change</li>
+                                        <li>Advice and consultation on personal legal matters</li>
+                                        <li>And more.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="collapse-group">
+                            <div class="collapse-btn nested-item" data-target="collapse-2c">
+                                <div class="btn-copy">How can I find out more?</div>
+                                <div class="btn-icon"></div>
+                            </div>
+                            <div class="collapse" id="collapse-2c">
+                                <div class="card card-block">
+                                    <p>For additional information, please call <span ng-include="'templates/global/phone_link.html'"></span> and say "legal," or visit <a href="http://www.info.legalplans.com" target="_blank">www.info.legalplans.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <a href="pdf/LP_PlanSummary.pdf" target="_blank" class="collapse-btn" style="padding-top: 15px; padding-bottom: 15px" onClick="ga('send', 'event', 'PDF', 'Click', 'Plan_Summary_Legal');">Coverage Details</a>
+            <div class="card card-block">
+                <p>Need Help? Call <span ng-include="'templates/global/phone_link.html'"></span></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <div class="container">
+            <div class="disclaimer-wrapper">
+                <p>Group <span class="variable-value">{{product_vars.lp_vars.name | lowercase}}</span> provided by MetLife <span class="variable-value">{{product_vars.lp_vars.name}}</span>, Inc. Cleveland, Ohio. In certain states, group <span class="variable-value">{{product_vars.lp_vars.name | lowercase}}</span> are provided through insurance coverage underwritten by Metropolitan Property and Casualty Insurance Company and Affinities, Warwick, RI.</p>
+                <p>Some services not available in all states. No service, including consultations, will be provided for: 1) employment-related matters, including company or statutory benefits; 2) matters involving the employer, MetLife and affiliates and plan attorneys; 3) matters in which there is a conflict of interest between the employee or spouse or dependents in which case services are excluded for the spouse and dependents; 4) appeals and class actions; 5) farm and business matters, including rental issues when the participant is the landlord; 6) patent, trademark and copyright matters; 7) costs and fines; 8) frivolous or unethical matters; 9) matters for which an attorney-client relationship exists prior to the participant becoming eligible for plan benefits. For all other personal legal matters, an advice and consultation benefit is provided. Additional representation is also included for certain matters. Please see your plan description for details.</p>
+                <p>MetLife<sup>&reg;</sup> is a registered trademarks of Metropolitan Life Insurance Company, New York, NY.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="global-footer"  ng-include="'templates/marketing/marketing_footer.html'"></div>
+</div>
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="https://getmetbenefits.com/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- JS Page Level -->
+<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/moment-timezone-with-data.min.js"></script>
+
+<!-- JS Customization -->
+<script src="js/global/global.js"></script>
+<script src="js/marketing/hospital.js"></script>
+
+</body>
+</html>

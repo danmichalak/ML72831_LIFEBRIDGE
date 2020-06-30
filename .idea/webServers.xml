@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="40e66342-b46f-4394-8a6e-3b0706ce40aa" name="LIFEBRIDGE" url="http://104.211.41.155">
+        <fileTransfer accessType="SFTP" host="104.211.41.155" port="22" sshConfigId="98e4a680-e7ae-4eec-b363-1578e47815e8" sshConfig="dan_temp@104.211.41.155:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

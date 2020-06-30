@@ -1,0 +1,1 @@
+var xmpcfg = {access: { accessToken: '63a53d4a-e9ee-4288-b528-227d5412a07f_f7323f8e-60c2-449e-8e12-7dd5f4c2891b_0d1a3992fba04cb5ac0423e3c945cd2b', url: 'https://getmetbenefits.com/XMPieXMPL_REST_API', circleProjectID:'f7323f8e-60c2-449e-8e12-7dd5f4c2891b', circleProjectName: 'ML_72831' }};
