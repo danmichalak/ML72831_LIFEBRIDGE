@@ -14,18 +14,6 @@
     "pay_deduct_value": "N"
   },
   "product_vars": {
-    "ai_vars": {
-      "name": "Accident Insurance",
-      "page": "accident.html"
-    },
-    "ci_vars": {
-      "name": "Critical Illness Insurance",
-      "page": "critical.html"
-    },
-    "hi_vars": {
-      "name": "Hospital Indemnity Insurance",
-      "page": "hospital.html"
-    },
     "lp_vars": {
       "name": "Legal Plans",
       "page": "legal.html"
