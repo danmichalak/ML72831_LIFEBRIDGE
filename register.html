@@ -161,17 +161,17 @@
                                                     <input type="hidden" id="dob_error2" name="dob_error2" ng-model="dobError2" required/>
                                                 </div>
 
-                                                <div class="form-check-grp" ng-if="!register.dob.$error.required && dateStatus['dob'] === 'valid'">
+                                                <!--<div class="form-check-grp" ng-if="!register.dob.$error.required && dateStatus['dob'] === 'valid'">
                                                     <label>
                                                         <input type="checkbox" class="user-checkbox" id="age" name="age" ng-model="ageValid" ng-change="checkForm('age')"/>
                                                         <span></span>
                                                         As of {{general_vars.as_of_date}}, I confirm my age is: <strong>{{asOfAge}}</strong>
                                                     </label>
                                                     <div ng-if="!ageValid" class="reg-error">
-                                                        Required 
+                                                        Required
                                                         <input type="hidden" id="age_error" name="age_error" ng-model="ageError" required/>
                                                     </div>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-6">

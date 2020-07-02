@@ -1,3 +1,3 @@
 var xmpcustom = {
-	loginUrl: 'https://getmetbenefits.com/VBMaster/Enroll'
+	loginUrl: 'https://getmetbenefits.com/LIFEBRIDGE/Enroll'
 }

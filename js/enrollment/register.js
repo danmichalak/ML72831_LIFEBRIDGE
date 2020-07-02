@@ -229,11 +229,11 @@ var xmplOnReady = function() {
 
                 if (xmpControllerDriverVar.scope.xmp.r["DOB"] && xmpControllerDriverVar.scope.dateStatus.dob === "valid") {
 
-                    var asOfDate = moment(xmpControllerDriverVar.scope.general_vars.as_of_date, "MM/DD/YYYY");
+                    /*var asOfDate = moment(xmpControllerDriverVar.scope.general_vars.as_of_date, "MM/DD/YYYY");
 
                     var asOfDay = asOfDate.get("date");
                     var asOfMonth = asOfDate.get("month");
-                    var asOfYear = asOfDate.get("year");
+                    var asOfYear = asOfDate.get("year");*/
 
                     var currentDay = moment().get("date");
                     var currentMonth = moment().get("month");
@@ -255,7 +255,7 @@ var xmplOnReady = function() {
                         xmpControllerDriverVar.scope.xmp.r["AGE"]--;
                     }
 
-                    xmpControllerDriverVar.scope.asOfAge = asOfYear - birthYear;
+                    /*xmpControllerDriverVar.scope.asOfAge = asOfYear - birthYear;
 
                     if (asOfMonth < (birthMonth - 1)) {
                         xmpControllerDriverVar.scope.asOfAge--;
@@ -263,7 +263,7 @@ var xmplOnReady = function() {
 
                     if ((birthMonth == asOfMonth) && (asOfDay < birthDay)) {
                         xmpControllerDriverVar.scope.asOfAge--;
-                    }
+                    }*/
 
                 }
 
