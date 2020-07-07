@@ -32,7 +32,7 @@ var xmplOnReady = function() {
                 }
 
                 if (xmpControllerDriverVar.scope.xmp.r["MISC10"] === "X") {
-                    xmpControllerDriverVar.scope.xmp.r["LP_RATE"] = "19.96";
+                    xmpControllerDriverVar.scope.xmp.r["LP_RATE"] = "18.42";
                 }
 
                 xmpControllerDriverVar.scope.prodTotalUpdate();
